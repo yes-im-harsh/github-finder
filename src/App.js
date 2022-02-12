@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="text-4xl text-orange-400">Hello World</div>
+      <button className="btn">Click Here!</button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
