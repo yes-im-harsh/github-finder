@@ -1,11 +1,12 @@
 import React from "react";
+import UserResults from "../users/UserResults";
 
 const Home = () => {
   return (
-    <div className="text-6xl">
-      Welcome!
-      <p>{process.env.REACT_APP_GITHUB_TOKEN}</p> {/*checking env token*/}
-    </div>
+    <>
+      {/* {Searchbar} */}
+      <UserResults />
+    </>
   );
 };
 
