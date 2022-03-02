@@ -53,12 +53,15 @@ export const GithubProvider = ({ children }) => {
       },
     });
 
-    const data = await responce.json();
-
-    dispatch({
-      type: "GET_USER",
-      payload: data,
-    });
+    if (responce.status === 404) {
+      window.location = "/notfound";
+    } else {
+      const data = await responce.json();
+      dispatch({
+        type: "GET_USER",
+        payload: data,
+      });
+    }
   };
 
   //Clearing the users
