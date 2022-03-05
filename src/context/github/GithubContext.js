@@ -4,9 +4,6 @@ import githubReducer from "./GithubReducer";
 const GithubContext = createContext();
 
 export const GithubProvider = ({ children }) => {
-  // const [users, setUsers] = useState([]);
-  // const [loading, setLoading] = useState(false);
-
   const initialState = {
     users: [],
     loading: false,
